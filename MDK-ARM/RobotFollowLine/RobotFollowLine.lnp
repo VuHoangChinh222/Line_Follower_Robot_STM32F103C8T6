@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"robotfollowline\startup_stm32f103xb.o"
+"robotfollowline\main.o"
+"robotfollowline\stm32f1xx_it.o"
+"robotfollowline\stm32f1xx_hal_msp.o"
+"robotfollowline\stm32f1xx_hal_gpio_ex.o"
+"robotfollowline\stm32f1xx_hal_adc.o"
+"robotfollowline\stm32f1xx_hal_adc_ex.o"
+"robotfollowline\stm32f1xx_hal.o"
+"robotfollowline\stm32f1xx_hal_rcc.o"
+"robotfollowline\stm32f1xx_hal_rcc_ex.o"
+"robotfollowline\stm32f1xx_hal_gpio.o"
+"robotfollowline\stm32f1xx_hal_dma.o"
+"robotfollowline\stm32f1xx_hal_cortex.o"
+"robotfollowline\stm32f1xx_hal_pwr.o"
+"robotfollowline\stm32f1xx_hal_flash.o"
+"robotfollowline\stm32f1xx_hal_flash_ex.o"
+"robotfollowline\stm32f1xx_hal_exti.o"
+"robotfollowline\stm32f1xx_hal_tim.o"
+"robotfollowline\stm32f1xx_hal_tim_ex.o"
+"robotfollowline\stm32f1xx_hal_uart.o"
+"robotfollowline\system_stm32f1xx.o"
+--strict --scatter "RobotFollowLine\RobotFollowLine.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RobotFollowLine.map" -o RobotFollowLine\RobotFollowLine.axf
